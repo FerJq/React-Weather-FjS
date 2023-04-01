@@ -4,18 +4,9 @@ import axios from "axios";
 import WeatherData from "./WeatherData";
 import ButtonForms from "./ThemeMode";
 import "./App.css";
-
 import "./Weather.css";
 
 export default function Weather(props) {
-  const theme = document.querySelector("body");
-  let navbarColor = null;
-  if (theme.classList.contains("darktheme")) {
-    navbarColor = "dark";
-  } else {
-    navbarColor = "light";
-  }
-
   let [lon, setLon] = useState(null);
   let [lat, setLat] = useState(null);
   navigator.geolocation.getCurrentPosition(function (position) {
@@ -76,7 +67,7 @@ export default function Weather(props) {
     return (
       <div id="main" className="Weather">
         <div className="Forms-container">
-          <nav class="navbar bg-body-tertiary" data-bs-theme={navbarColor}>
+          <nav class="navbar bg-body-tertiary" data-bs-theme={props.theme}>
             <div class="container-fluid">
               <a class="navbar-brand" href="/">
                 FjS.
