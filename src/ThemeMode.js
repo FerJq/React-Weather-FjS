@@ -20,13 +20,9 @@ export default function ButtonForms(props) {
 
   function changeTheme() {
     if (theme === "light") {
-      bodytheme.classList.contains("darktheme");
-      bodytheme.classList.remove("darktheme");
-      props.valuefunction();
       setChange(true);
       document.body.style.backgroundColor = "#bfe9ff";
     } else {
-      bodytheme.classList.add("darktheme");
       props.valuefunction();
       setChange(false);
       document.body.style.backgroundColor = "#1a191a";
