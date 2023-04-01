@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ThemeMode.css";
 
-export default function ButtonForms(props) {
-  const [change, setChange] = useState(false);
+export default function ChangeDayNight(props) {
   const bodytheme = document.querySelector("body");
   let theme = props.theme;
   let date = props.gethour;
@@ -20,11 +19,7 @@ export default function ButtonForms(props) {
   return (
     <span className="ButtonForms">
       {" "}
-      <button
-        set={change}
-        className="btn btn-outline-primary"
-        onClick={props.valuefunction}
-      >
+      <button className="btn btn-outline-primary" onClick={props.valuefunction}>
         Theme
       </button>
     </span>

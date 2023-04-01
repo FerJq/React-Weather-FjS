@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ProgressBar } from "react-loader-spinner";
 import axios from "axios";
 import WeatherData from "./WeatherData";
-import ButtonForms from "./ThemeMode";
+import ChangeDayNight from "./ThemeMode";
 import "./App.css";
 import "./Weather.css";
 
@@ -83,7 +83,7 @@ export default function Weather(props) {
                 <button class="btn btn-outline-primary" type="submit">
                   Search
                 </button>
-                <ButtonForms
+                <ChangeDayNight
                   gethour={weatherProps.actualDate}
                   valuefunction={props.valuefunction}
                   theme={props.theme}
