@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ProgressBar } from "react-loader-spinner";
 import axios from "axios";
 import WeatherData from "./WeatherData";
-import ChangeDayNight from "./ThemeMode";
 import "./App.css";
 import "./Weather.css";
 

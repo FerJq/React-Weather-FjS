@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 import Weather from "./Weather";
-import React, { Component } from "react";
+
 import Switch from "react-switch";
 
 function App() {
+  let mode = "Light mode";
   const [theme, setTheme] = useState("light");
   console.log(theme);
 
@@ -25,7 +26,13 @@ function App() {
   return (
     <div className="App" id={theme}>
       <div className="Container">
-        <Switch onChange={changeTheme} checked={theme === "dark"} />
+        <span>
+          {" "}
+          <h5>
+            {mode} <Switch onChange={changeTheme} checked={theme === "dark"} />
+          </h5>
+          <br />
+        </span>
         <Weather theme={theme} />
       </div>
       <footer className="SourceCode">
