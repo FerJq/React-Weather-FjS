@@ -1,0 +1,82 @@
+.Weather-General-Properties {
+  margin: 20px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 400px 350px;
+}
+
+h1 {
+  text-align: center;
+  margin-right: 40px;
+}
+/*Grid*/
+.TempIcon {
+  text-align: right;
+}
+
+.Temp {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+}
+
+.DataTemp {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.font-desc {
+  font-size: 18px;
+}
+
+/*Forecast*/
+.ForecastDisplay {
+  display: block;
+  text-align: center;
+}
+
+.SourceCode {
+  font-size: 15px;
+  padding: 1%;
+  text-align: center;
+}
+.SourceCode a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.SourceCode a:hover {
+  transition: all 200ms ease-in-out;
+  color: aquamarine;
+}
+
+.darktheme .TempIcon {
+  text-align: right;
+}
+
+.darktheme .Temp {
+  color: #ffffff;
+  font-size: 80px;
+}
+
+.darktheme .DataTemp {
+  color: whitesmoke;
+}
+
+.darktheme .font-desc {
+  font-size: 18px;
+}
+
+@media (max-width: 700px) {
+  .Weather-General-Properties {
+    display: block;
+  }
+  .Weather-props {
+    padding: 2%;
+    text-align: center;
+  }
+
+  .Time-Description {
+    padding: 2%;
+    text-align: center;
+  }
+}

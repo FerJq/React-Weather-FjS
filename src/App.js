@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="Container">
+        <Weather />
+      </div>
+      <footer className="SourceCode">
+        Inspiring-Swang Weather App was coded by{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className=""
+          href="https://www.linkedin.com/in/fernanda-santiago-b93b07265"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Learn React
+          Fernanda J. Santiago
+        </a>{" "}
+        and is{" "}
+        <a
+          className=""
+          href="https://github.com/FerJq/weather-vanilla"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced on Github
         </a>
-      </header>
+      </footer>
     </div>
   );
 }

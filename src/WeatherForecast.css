@@ -1,0 +1,10 @@
+.WeatherForecast {
+  padding: 0 auto;
+  border-radius: 60px;
+  transition: all 400ms ease-in-out;
+}
+
+.WeatherForecast:hover {
+  transition: all 200ms ease-in-out;
+  transform: scale(140%);
+}
