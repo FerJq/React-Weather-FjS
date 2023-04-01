@@ -11,15 +11,17 @@ h1 {
 }
 /*Grid*/
 .TempIcon {
+  font-weight: 600;
   text-align: right;
 }
 
 .Temp {
-  color: rgb(255, 255, 255);
+  color: rgb(81, 81, 81);
   font-size: 80px;
 }
 
 .DataTemp {
+  font-weight: 500;
   margin-top: 100px;
   text-align: center;
 }
@@ -54,14 +56,16 @@ h1 {
 @media (max-width: 700px) {
   .Weather-General-Properties {
     display: block;
+    text-align: center;
+    margin: 0 auto;
   }
-  .Weather-props {
-    padding: 2%;
+  .TempIcon {
     text-align: center;
   }
 
-  .Time-Description {
-    padding: 2%;
+  .DataTemp {
+    margin: 40px auto;
+    padding: 1%;
     text-align: center;
   }
 }

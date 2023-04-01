@@ -1,10 +1,10 @@
 .Weather {
   display: block;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), #00000080),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), #ffffff80),
     url("../media/day.jpg");
   max-width: 800px;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 10px;
   border: 2px solid white;
   box-shadow: 1px 1px 30px rgb(255, 249, 226);
@@ -75,4 +75,5 @@
   .InputCity-Submit {
     width: 100px;
   }
+
 }

@@ -10,7 +10,7 @@ export default function WeatherData(props) {
   if (mode === "dark") {
     iconColor = "#0080ff";
   } else {
-    iconColor = "#f6ea8c";
+    iconColor = "#004e75";
   }
   function unitsTemp() {
     let metric = Math.round(props.data.actualTemp);
