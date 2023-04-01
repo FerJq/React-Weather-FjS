@@ -1,4 +1,5 @@
 .App {
+  color: white;
   margin: 100px auto;
 }
 
@@ -14,13 +15,14 @@
   text-align: center;
 }
 .SourceCode a {
+  color: yellow;
   font-size: 16px;
   text-decoration: none;
 }
 
 .SourceCode a:hover {
   transition: all 200ms ease-in-out;
-  color: aquamarine;
+  color: rgb(225, 182, 255);
 }
 
 .darktheme {
@@ -29,4 +31,8 @@
 
 .darktheme .App {
   color: white;
+}
+
+.darktheme .SourceCode a {
+  color: #256cf9;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
 import Forecast from "./Forecast";
