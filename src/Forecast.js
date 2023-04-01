@@ -29,11 +29,7 @@ export default function Forecast(props) {
             if ((index < 6) & (index > 0)) {
               return (
                 <div key={index} className="col ForecastLayout">
-                  <WeatherForecast
-                    color={props.color}
-                    units={props.units}
-                    forecastData={days}
-                  />
+                  <WeatherForecast color={props.color} units={props.units} forecastData={days} />
                 </div>
               );
             } else {
