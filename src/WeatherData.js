@@ -41,9 +41,8 @@ export default function WeatherData(props) {
           <CurrentDate date={props.data.actualDate} />
         </div>
         <div className="DataTemp">
-          <div className="font-desc">
-            Description: {props.data.actualDescrip}
-          </div>
+          <h4>Weather</h4>
+          Description: {props.data.actualDescrip}
           <div className="d-f">Humidity: {props.data.actualHumidty}%</div>
           <div className="d-f">Wind: {props.data.currentWind}km/h</div>
         </div>
