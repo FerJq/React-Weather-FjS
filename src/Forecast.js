@@ -9,7 +9,8 @@ export default function Forecast(props) {
   const lon = props.coord.lon;
   const [ready, setReady] = useState(false);
   const [loadForecast, setLoadForecast] = useState(null);
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid="dsasdnpm"&units=metric`;
+  let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
   function showData(response) {
     setLoadForecast(response.data.daily);
