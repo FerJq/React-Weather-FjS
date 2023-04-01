@@ -83,11 +83,6 @@ export default function Weather(props) {
                 <button class="btn btn-outline-primary" type="submit">
                   Search
                 </button>
-                <ChangeDayNight
-                  gethour={weatherProps.actualDate}
-                  valuefunction={props.valuefunction}
-                  theme={props.theme}
-                />
                 <button
                   className="btn btn-outline-primary"
                   href="/"
