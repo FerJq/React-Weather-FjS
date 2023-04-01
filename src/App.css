@@ -38,3 +38,16 @@
 .darktheme footer {
   color: white;
 }
+
+#dark .SourceCode a {
+  transition: all 200ms ease-in-out;
+  font-weight: 700;
+  color: #256cf9;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#dark .SourceCode a:hover {
+  transition: all 200ms ease-in-out;
+  color: rgb(192, 119, 241);
+}
