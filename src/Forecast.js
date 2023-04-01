@@ -9,8 +9,7 @@ export default function Forecast(props) {
   const lon = props.coord.lon;
   const [ready, setReady] = useState(false);
   const [loadForecast, setLoadForecast] = useState(null);
-  let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid="dsasd"&units=metric`;
 
   function showData(response) {
     setLoadForecast(response.data.daily);
@@ -29,7 +28,11 @@ export default function Forecast(props) {
             if ((index < 6) & (index > 0)) {
               return (
                 <div key={index} className="col ForecastLayout">
-                  <WeatherForecast color={props.color} units={props.units} forecastData={days} />
+                  <WeatherForecast
+                    color={props.color}
+                    units={props.units}
+                    forecastData={days}
+                  />
                 </div>
               );
             } else {
