@@ -36,9 +36,6 @@ h1 {
   text-align: center;
 }
 
-#dark .TempIcon {
-  text-align: right;
-}
 
 #dark .Temp {
   color: #ffffff;
@@ -63,9 +60,7 @@ h1 {
     text-align: center;
   }
 
-  #dark .TempIcon {
-    text-align: center;
-  }
+
 
   .DataTemp {
     margin: 40px auto;
