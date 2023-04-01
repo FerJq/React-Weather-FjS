@@ -20,6 +20,13 @@ export default function CurrentDate(props) {
     minutes = `0${minutes}`;
   }
 
+  const mode = document.getElementById("light");
+  if ((hours < 6) | (hours > 18)) {
+    mode.setAttribute("id", "dark");
+  } else {
+    mode.setAttribute("id", "light");
+  }
+
   return (
     <div>
       {days[day]} {hours}:{minutes}

@@ -19,15 +19,16 @@ function App() {
 
   if (theme === "light") {
     document.body.style.backgroundColor = "#bfe9ff";
+    mode = "Light Theme ";
   } else {
     document.body.style.backgroundColor = "#1a191a";
+    mode = "Dark Theme ";
   }
 
   return (
     <div className="App" id={theme}>
       <div className="Container">
         <span>
-          {" "}
           <h5>
             {mode} <Switch onChange={changeTheme} checked={theme === "dark"} />
           </h5>
