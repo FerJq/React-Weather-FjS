@@ -5,13 +5,6 @@ import Forecast from "./Forecast";
 import "./WeatherData.css";
 
 export default function WeatherData(props) {
-  const theme = document.querySelector("body");
-  let iconColor = "";
-  if (theme.classList.contains("darktheme")) {
-    iconColor = "#0080ff";
-  } else {
-    iconColor = "#f6ea8c";
-  }
 
   function unitsTemp() {
     let metric = Math.round(props.data.actualTemp);
@@ -28,12 +21,7 @@ export default function WeatherData(props) {
 
       <div className="Weather-General-Properties">
         <div className="TempIcon">
-          <WeatherIcon
-            code={props.data.iconCode}
-            size={100}
-            color={iconColor}
-          />{" "}
-          {"  "}
+          <WeatherIcon theme={props.theme} code={props.data.iconCode} size={100} /> {"  "}
           <span className="Temp">{unitsTemp()}°</span>
           <h4>
             {props.data.actualName}, {props.data.actualCountry}
@@ -48,11 +36,7 @@ export default function WeatherData(props) {
         </div>
       </div>
       <div className="ForecastDisplay">
-        <Forecast
-          color={iconColor}
-          coord={props.data.coordinates}
-          units={props.units}
-        />
+        <Forecast coord={props.data.coordinates} units={props.units} />
       </div>
       <br />
     </div>

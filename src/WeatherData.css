@@ -34,21 +34,6 @@ h1 {
   text-align: center;
 }
 
-.SourceCode {
-  font-size: 15px;
-  padding: 1%;
-  text-align: center;
-}
-.SourceCode a {
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.SourceCode a:hover {
-  transition: all 200ms ease-in-out;
-  color: aquamarine;
-}
-
 .darktheme .TempIcon {
   text-align: right;
 }

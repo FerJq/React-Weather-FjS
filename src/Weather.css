@@ -57,7 +57,7 @@
   color: aquamarine;
 }
 
-.darktheme .Weather {
+#dark .Weather {
   background-image: linear-gradient(rgba(66, 66, 66, 0.4), rgba(0, 0, 0, 0.9)),
     url("../media/night.jpg");
   color: #ffffff;

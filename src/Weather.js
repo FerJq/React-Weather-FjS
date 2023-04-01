@@ -7,7 +7,7 @@ import "./App.css";
 
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const theme = document.querySelector("body");
   let navbarColor = null;
   if (theme.classList.contains("darktheme")) {
@@ -92,7 +92,11 @@ export default function Weather() {
                 <button class="btn btn-outline-primary" type="submit">
                   Search
                 </button>
-                <ButtonForms gethour={weatherProps.actualDate} />
+                <ButtonForms
+                  gethour={weatherProps.actualDate}
+                  valuefunction={props.valuefunction}
+                  theme={props.theme}
+                />
                 <button
                   className="btn btn-outline-primary"
                   href="/"
@@ -114,7 +118,11 @@ export default function Weather() {
         <br />
         <div className="Container">
           <div className="Data-container">
-            <WeatherData data={weatherProps} units={units} />
+            <WeatherData
+              data={weatherProps}
+              units={units}
+              theme={props.theme}
+            />
           </div>
         </div>
       </div>

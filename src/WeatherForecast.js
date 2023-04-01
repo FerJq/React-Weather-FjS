@@ -20,11 +20,7 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="Forecast-day">{day()}</div>
         <div className="Forecast-Icon">
-          <WeatherIcon
-            color={props.color}
-            size={36}
-            code={props.forecastData.weather[0].icon}
-          />
+          <WeatherIcon size={36} code={props.forecastData.weather[0].icon} />
         </div>
         <div className="Forecast-temp">
           <span className="MaxTemp">
@@ -42,11 +38,7 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="Forecast-day">{day()}</div>
         <div className="Forecast-Icon">
-          <WeatherIcon
-            color={props.color}
-            size={36}
-            code={props.forecastData.weather[0].icon}
-          />
+          <WeatherIcon size={36} code={props.forecastData.weather[0].icon} />
         </div>
         <div className="Forecast-temp">
           <span className="MaxTemp">{forecastImperialMax}°</span> |{" "}
