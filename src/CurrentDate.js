@@ -21,6 +21,7 @@ export default function CurrentDate(props) {
   }
 
 
+
   return (
     <div>
       {days[day]} {hours}:{minutes}

@@ -63,6 +63,10 @@ h1 {
     text-align: center;
   }
 
+  #dark .TempIcon {
+    text-align: center;
+  }
+
   .DataTemp {
     margin: 40px auto;
     padding: 1%;

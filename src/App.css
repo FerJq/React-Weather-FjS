@@ -21,7 +21,7 @@
 .SourceCode a {
   transition: all 200ms ease-in-out;
   font-weight: 700;
-  color: rgb(7, 85, 255);
+  color: #004e75;
   font-size: 16px;
   text-decoration: none;
 }
