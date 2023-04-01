@@ -6,7 +6,11 @@ export default function ChangeDayNight(props) {
   let date = props.gethour;
   const hour = date.getHours();
 
-
+  if ((hour < 6) | (hour > 18)) {
+    document.body.style.backgroundColor = "#1a191a";
+  } else {
+    document.body.style.backgroundColor = "#bfe9ff";
+  }
 
   return (
     <span className="ButtonForms">

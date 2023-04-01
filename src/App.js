@@ -3,11 +3,16 @@ import "./App.css";
 import Weather from "./Weather";
 
 function App() {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("light");
   console.log(theme);
-  const changeTheme = () => {
-    setTheme((current) => (current === "light" ? "dark" : "light"));
-  };
+
+  function changeTheme() {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }
 
   if (theme === "light") {
     document.body.style.backgroundColor = "#bfe9ff";
