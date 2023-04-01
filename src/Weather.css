@@ -1,7 +1,7 @@
 .Weather {
   display: block;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), #ffffff80),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("../media/day.jpg");
   max-width: 800px;
   color: rgb(0, 0, 0);

@@ -8,3 +8,13 @@
   transition: all 200ms ease-in-out;
   transform: scale(140%);
 }
+
+.MaxTemp {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.MinTemp {
+  font-size: 20px;
+  font-weight: 200;
+}

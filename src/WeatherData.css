@@ -36,20 +36,20 @@ h1 {
   text-align: center;
 }
 
-.darktheme .TempIcon {
+#dark .TempIcon {
   text-align: right;
 }
 
-.darktheme .Temp {
+#dark .Temp {
   color: #ffffff;
   font-size: 80px;
 }
 
-.darktheme .DataTemp {
+#dark .DataTemp {
   color: whitesmoke;
 }
 
-.darktheme .font-desc {
+#dark .font-desc {
   font-size: 18px;
 }
 

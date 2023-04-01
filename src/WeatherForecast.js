@@ -18,6 +18,7 @@ export default function WeatherForecast(props) {
   if (units === "metric") {
     return (
       <div className="WeatherForecast">
+        <br />
         <div className="Forecast-day">{day()}</div>
         <div className="Forecast-Icon">
           <WeatherIcon
@@ -40,6 +41,7 @@ export default function WeatherForecast(props) {
   } else {
     return (
       <div className="WeatherForecast">
+        <br />
         <div className="Forecast-day">{day()}</div>
         <div className="Forecast-Icon">
           <WeatherIcon
