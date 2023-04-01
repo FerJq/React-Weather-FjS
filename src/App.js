@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App" id={theme}>
       <div className="Container">
-        <Weather valuefunction={changeTheme} theme={theme} />
+        <Weather theme={theme} />
       </div>
       <footer className="SourceCode">
         Inspiring-Swang Weather App was coded by{" "}
