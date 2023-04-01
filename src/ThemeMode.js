@@ -11,30 +11,19 @@ export default function ButtonForms(props) {
   if ((hour < 6) | (hour > 18)) {
     document.body.style.backgroundColor = "#1a191a";
     bodytheme.classList.add("darktheme");
-    props.valuefunction();
   } else {
     document.body.style.backgroundColor = "#bfe9ff";
     bodytheme.classList.remove("darktheme");
     props.valuefunction();
   }
 
-  function changeTheme() {
-    if (theme === "light") {
-      setChange(true);
-      document.body.style.backgroundColor = "#bfe9ff";
-    } else {
-      props.valuefunction();
-      setChange(false);
-      document.body.style.backgroundColor = "#1a191a";
-    }
-  }
   return (
     <span className="ButtonForms">
       {" "}
       <button
         set={change}
         className="btn btn-outline-primary"
-        onClick={(changeTheme, props.valuefunction)}
+        onClick={props.valuefunction}
       >
         Theme
       </button>
