@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App" id={theme}>
       <div className="Container">
-        <Switch onChange={changeTheme} />
+        <Switch onChange={changeTheme} checked={theme === "dark"} />
         <Weather theme={theme} />
       </div>
       <footer className="SourceCode">
