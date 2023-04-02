@@ -12,6 +12,9 @@
   border: 2px solid white;
   box-shadow: 1px 1px 30px rgb(255, 249, 226);
 }
+.Weather-Container {
+  padding: 10px;
+}
 
 .Forms-wrapp {
   display: flex;

@@ -31,10 +31,8 @@ function App() {
     <div className="App" id={theme}>
       <div className="Container">
         <span>
-          <h5>
-            {mode} <Switch onChange={changeTheme} checked={theme === "dark"} />
-          </h5>
-          <br />
+          <span className="Modetheme">{mode} </span>{" "}
+          <Switch onChange={changeTheme} checked={theme === "dark"} />
         </span>
         <Weather theme={theme} />
       </div>
