@@ -20,6 +20,14 @@ export default function CurrentDate(props) {
     minutes = `0${minutes}`;
   }
 
+  let theme = props.theme;
+  let x = document.querySelector(".App");
+  if (hours < 6 | hours > 18 && theme === "light") {
+    x.id = "dark";
+  } else {
+    x.id = "light";
+  }
+
   return (
     <div>
       {days[day]} {hours}:{minutes}

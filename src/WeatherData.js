@@ -38,7 +38,11 @@ export default function WeatherData(props) {
           <h4>
             {props.data.actualName}, {props.data.actualCountry}
           </h4>
-          <CurrentDate date={props.data.actualDate} />
+          <CurrentDate
+            date={props.data.actualDate}
+            modetheme={props.modetheme}
+            theme={props.theme}
+          />
         </div>
         <div className="DataTemp">
           <h4>Weather</h4>

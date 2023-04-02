@@ -123,6 +123,7 @@ export default function Weather(props) {
                 data={weatherProps}
                 units={units}
                 theme={props.theme}
+                modetheme={props.modetheme}
               />
             </div>
           </div>

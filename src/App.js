@@ -34,7 +34,7 @@ function App() {
           <span className="Modetheme">{mode} </span>{" "}
           <Switch onChange={changeTheme} checked={theme === "dark"} />
         </span>
-        <Weather theme={theme} />
+        <Weather theme={theme}  modetheme={changeTheme}/>
       </div>
       <footer className="SourceCode">
         Inspiring-Swang Weather App was coded by{" "}
