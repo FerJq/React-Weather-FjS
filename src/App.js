@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import Weather from "./Weather";
 
@@ -25,8 +25,6 @@ function App() {
     mode = "Dark Theme ";
   }
 
-  useEffect(() => {}, [theme]);
-
   return (
     <div className="App" id={theme}>
       <div className="Container">
@@ -34,7 +32,7 @@ function App() {
           <span className="Modetheme">{mode} </span>{" "}
           <Switch onChange={changeTheme} checked={theme === "dark"} />
         </span>
-        <Weather theme={theme}  modetheme={changeTheme}/>
+        <Weather theme={theme} modetheme={changeTheme} />
       </div>
       <footer className="SourceCode">
         Inspiring-Swang Weather App was coded by{" "}

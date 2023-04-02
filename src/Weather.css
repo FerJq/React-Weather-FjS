@@ -1,3 +1,11 @@
+:root {
+  --bs-tertiary-bg-rgb: #303030;
+}
+
+#dark .bg-body-tertiary {
+  background-color: var(--bs-tertiary-bg-rgb);
+}
+
 .Weather {
   display: block;
   margin: 0 auto;
