@@ -86,6 +86,8 @@ export default function Weather(props) {
                 <button class="btn btn-outline-primary" type="submit">
                   Search
                 </button>
+              </form>
+              <div className="ButtonsContainer">
                 <button onClick={refreshPage} class="btn btn-outline-primary">
                   Current
                 </button>
@@ -103,7 +105,7 @@ export default function Weather(props) {
                 >
                   Fahrenheit
                 </button>
-              </form>
+              </div>
             </div>
           </nav>
         </div>
