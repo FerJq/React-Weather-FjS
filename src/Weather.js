@@ -62,7 +62,9 @@ export default function Weather(props) {
     axios.get(apiUrl).then(showApiCall);
   }
 
-  
+  function refreshPage() {
+    document.location.reload();
+  }
 
   if (weatherProps.prepare) {
     return (
@@ -84,19 +86,22 @@ export default function Weather(props) {
                 <button class="btn btn-outline-primary" type="submit">
                   Search
                 </button>
+                <button onClick={refreshPage} class="btn btn-outline-primary">
+                  Current
+                </button>
                 <button
                   className="btn btn-outline-primary"
                   href="/"
                   onClick={showCelsius}
                 >
-                  C
+                  Celsius
                 </button>{" "}
                 <button
                   className="btn btn-outline-primary"
                   href="/"
                   onClick={showFaren}
                 >
-                  F
+                  Fahrenheit
                 </button>
               </form>
             </div>

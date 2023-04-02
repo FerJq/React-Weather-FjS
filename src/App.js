@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Weather from "./Weather";
 
@@ -24,6 +24,8 @@ function App() {
     document.body.style.backgroundColor = "#1a191a";
     mode = "Dark Theme ";
   }
+
+  useEffect(() => {}, [theme]);
 
   return (
     <div className="App" id={theme}>
