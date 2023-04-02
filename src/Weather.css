@@ -79,6 +79,10 @@
   .InputCity-Submit {
     width: 100px;
   }
+
+  .Weather-Container {
+    padding: 4%;
+  }
   nav button {
     width: 100px;
   }

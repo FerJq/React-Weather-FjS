@@ -68,55 +68,57 @@ export default function Weather(props) {
 
   if (weatherProps.prepare) {
     return (
-      <div id="main" className="Weather">
-        <div className="Forms-container">
-          <nav class="navbar bg-body-tertiary" data-bs-theme={props.theme}>
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/">
-                FjS.
-              </a>
-              <form class="d-flex" role="search" onSubmit={preventAction}>
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  onChange={saveData}
-                />
-                <button class="btn btn-outline-primary" type="submit">
-                  Search
-                </button>
-              </form>
-              <div className="ButtonsContainer">
-                <button onClick={refreshPage} class="btn btn-outline-primary">
-                  Current
-                </button>
-                <button
-                  className="btn btn-outline-primary"
-                  href="/"
-                  onClick={showCelsius}
-                >
-                  Celsius
-                </button>{" "}
-                <button
-                  className="btn btn-outline-primary"
-                  href="/"
-                  onClick={showFaren}
-                >
-                  Fahrenheit
-                </button>
+      <div className="Weather-Container">
+        <div id="main" className="Weather">
+          <div className="Forms-container">
+            <nav class="navbar bg-body-tertiary" data-bs-theme={props.theme}>
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                  FjS.
+                </a>
+                <form class="d-flex" role="search" onSubmit={preventAction}>
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    onChange={saveData}
+                  />
+                  <button class="btn btn-outline-primary" type="submit">
+                    Search
+                  </button>
+                </form>
+                <div className="ButtonsContainer">
+                  <button onClick={refreshPage} class="btn btn-outline-primary">
+                    Current
+                  </button>
+                  <button
+                    className="btn btn-outline-primary"
+                    href="/"
+                    onClick={showCelsius}
+                  >
+                    Celsius
+                  </button>{" "}
+                  <button
+                    className="btn btn-outline-primary"
+                    href="/"
+                    onClick={showFaren}
+                  >
+                    Fahrenheit
+                  </button>
+                </div>
               </div>
+            </nav>
+          </div>
+          <br />
+          <div className="Container">
+            <div className="Data-container">
+              <WeatherData
+                data={weatherProps}
+                units={units}
+                theme={props.theme}
+              />
             </div>
-          </nav>
-        </div>
-        <br />
-        <div className="Container">
-          <div className="Data-container">
-            <WeatherData
-              data={weatherProps}
-              units={units}
-              theme={props.theme}
-            />
           </div>
         </div>
       </div>
