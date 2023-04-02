@@ -18,7 +18,7 @@ export default function Weather(props) {
   let [weatherProps, setWeatherProps] = useState({ prepare: false });
   const [units, setUnits] = useState("metric");
   const [city, setCity] = useState("");
-  const apiKey = "6643c7326a4c2a38838264a28531d97e";
+  const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   function showFaren(event) {
     event.preventDefault();
@@ -57,8 +57,8 @@ export default function Weather(props) {
   }
 
   function handleData() {
-    const apiKey = "6643c7326a4c2a38838264a28531d97e";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid="${apiKey}&units=metric`;
+    const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showApiCall);
   }
 
@@ -71,25 +71,31 @@ export default function Weather(props) {
       <div className="Weather-Container">
         <div id="main" className="Weather">
           <div className="Forms-container">
-            <nav class="navbar bg-body-tertiary" data-bs-theme={props.theme}>
-              <div class="container-fluid">
-                <a class="navbar-brand" href="/">
+            <nav
+              className="navbar bg-body-tertiary"
+              data-bs-theme={props.theme}
+            >
+              <div className="container-fluid">
+                <a className="navbar-brand" href="/">
                   FjS.
                 </a>
-                <form class="d-flex" role="search" onSubmit={preventAction}>
+                <form className="d-flex" role="search" onSubmit={preventAction}>
                   <input
-                    class="form-control me-2"
+                    className="form-control me-2"
                     type="search"
                     placeholder="Search"
                     aria-label="Search"
                     onChange={saveData}
                   />
-                  <button class="btn btn-outline-primary" type="submit">
+                  <button className="btn btn-outline-primary" type="submit">
                     Search
                   </button>
                 </form>
                 <div className="ButtonsContainer">
-                  <button onClick={refreshPage} class="btn btn-outline-primary">
+                  <button
+                    onClick={refreshPage}
+                    className="btn btn-outline-primary"
+                  >
                     Current
                   </button>
                   <button
