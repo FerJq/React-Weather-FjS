@@ -58,7 +58,7 @@ export default function Weather(props) {
 
   function handleData() {
     const apiKey = "6643c7326a4c2a38838264a28531d97e";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid="${apiKey}&units=metric`;
     axios.get(apiUrl).then(showApiCall);
   }
 
