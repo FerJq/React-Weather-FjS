@@ -128,8 +128,8 @@ export default function Weather(props) {
     return (
       <div>
         <ProgressBar
-          height="80"
-          width="80"
+          width="400"
+          height="200"
           ariaLabel="progress-bar-loading"
           wrapperStyle={{}}
           wrapperClass="progress-bar-wrapper"
@@ -137,7 +137,7 @@ export default function Weather(props) {
           barColor="#51E5FF"
         />
         <p className="Loading">
-          The access to your location is required for this App.
+          ❗The access to your location is required to run this App.❗
         </p>
       </div>
     );

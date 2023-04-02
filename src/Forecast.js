@@ -46,15 +46,18 @@ export default function Forecast(props) {
   } else {
     axios.get(apiUrl).then(showData);
     return (
-      <ProgressBar
-        height="80"
-        width="80"
-        ariaLabel="progress-bar-loading"
-        wrapperStyle={{}}
-        wrapperClass="progress-bar-wrapper"
-        borderColor="#F4442E"
-        barColor="#51E5FF"
-      />
+      <div>
+        <ProgressBar
+          height="120"
+          width="80"
+          ariaLabel="progress-bar-loading"
+          wrapperStyle={{}}
+          wrapperClass="progress-bar-wrapper"
+          borderColor="#F4442E"
+          barColor="#51E5FF"
+        />
+        <p className="Loading fw-normal">Loading Forecast...</p>
+      </div>
     );
   }
 }

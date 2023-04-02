@@ -59,6 +59,10 @@
   color: rgb(0, 0, 0);
 }
 
+.ProgressBar {
+  width: 200px;
+}
+
 .Units a:hover {
   transition: all 200ms ease-in-out;
   box-shadow: 2px 3px aquamarine;
@@ -74,6 +78,9 @@
   box-shadow: 1px 1px 30px rgb(48, 48, 48);
 }
 
+#dark .Loading {
+  color: white;
+}
 @media (max-width: 700px) {
   .InputCity-Search {
     width: 250px;
